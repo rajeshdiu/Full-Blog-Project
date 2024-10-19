@@ -1,0 +1,15 @@
+<nav>
+    <div class="logo">
+        <h1>Blog Site</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href=" {% url 'homePage' %} ">Home</a></li>
+    {% if request.user.bloggerProfile %}
+
+    {% endif %}
+
+        <li><a href=" {% url 'ProfilePage' %} ">Profile Page</a></li>
+        <li><a href=" {% url 'AllBlogPost' %} ">Blog Feed</a></li>
+        <li><a href=" {% url 'logoutPage' %} ">Log Out</a></li>
+    </ul>
+</nav>
